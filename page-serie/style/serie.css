@@ -1,0 +1,239 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .pinning-header {
+    height: 70px;
+}
+
+div {
+    display: block;
+}
+
+element.style {
+    top: 0px;
+    position: relative;
+    background: transparent;
+}
+
+header .pinning-header .pinning-header-container {
+    left: 0;
+    right: 0;
+    top: 0;
+    position: relative;
+    z-index: 1;
+}
+
+header .pinning-header .container:not(.solid) {
+    background-color: transparent;
+}
+
+header .pinning-header .pinning-header-container .container {
+    z-index: 2;
+    height: 60px;
+}
+
+.pinning-header .container {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, .7)), color-stop(10%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, 0));
+    background-image: -moz- oldlinear-gradient(top, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, 0));
+}
+
+.pinning-header .container {
+    background-color: transparent;
+}
+
+.pinning-header .container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 4%;
+    z-index: 2;
+    font-size: 1.2rem;
+    -webkit-transition: background-color .4s;
+    -o-transition: background-color .4s;
+    -moz-transition: background-color .4s;
+    transition: background-color .4s;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    background-color: transparent;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: var(--vermelho);
+    font-family: 'BebasNeue-Regular';
+    font-size: 40px;
+}
+
+header nav a {
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/*serie principal*/
+
+.serie-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-teenwolf.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .container {
+    width: 70%;
+}
+
+.serie-principal .container {
+    /*Titulos e Botões*/
+    margin-left: 30px;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+.serie-principal .titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.serie-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.serie-principal .botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.serie-principal .botao:hover {
+    background-color: rgb(87, 87, 87);
+    color: black;
+}
+
+.serie-principal .botao i {
+    margin-right: 8px;
+}
+
+.titulo-lancamento {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+
+/*Carrosel onde os filmes e entre outros passam a ser girado quando clicando em cima e passando para a esquerda ou direita*/
+
+.carrosel-series {
+    margin-top: 5px;
+}
+
+.botoes .botoes-series {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 115px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.botoes .botoes-series:hover {
+    background-color: rgb(87, 87, 87);
+    color: rgb(0, 0, 0);
+}
+
+.link-blue {
+    color: white;
+    text-decoration: none;
+}
+
+.box-filmes {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+/*Rodapé do site com minhas credenciais*/
+
+nav .rodape {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 70%;
+    border: none;
+    font-size: 12px;
+}
+
+
+/*rodapé com efeito de transparencia ao passar o mouse*/
+
+footer nav p {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+footer nav p:hover {
+    color: white;
+}
