@@ -1,1 +1,4 @@
-# Usei o html, css, js, imagens, font e o Jquery
+# Nesta aplicação clone da Netflix nomeada por Marflix
+
+## Linguagens Utilizadas:
+HTML, CSS, JS, Images, Font e o Jquery
